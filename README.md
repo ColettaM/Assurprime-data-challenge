@@ -214,11 +214,7 @@ Le dépôt contient :
 
 - le **rapport PDF du projet**
 - le **notebook correspondant à la soumission finale**
-- les **captures d'écran des soumissions**
-- la **capture du classement**
-
-> Par manque de temps, seul le **notebook final de la meilleure soumission** est fourni.  
-> Les autres essais sont décrits dans le rapport.
+- le **fichier soumission déposé sur le site**
 
 ---
 
