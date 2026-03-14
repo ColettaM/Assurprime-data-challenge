@@ -141,7 +141,7 @@ où :
 
 Résultat obtenu sur la plateforme :
 
-- **Classement public global : 89 / 358**
+- **Classement public global : 51 / 358**
 - **Classement académique : 2e**
 
 Informations sur la meilleure soumission :
