@@ -1,6 +1,8 @@
 # Data Challenge — AssurPrime
 
-Projet réalisé dans le cadre du cours Statistique en Grande dimension.
+Projet réalisé dans le cadre du cours Statistique en Grande dimension et apprentissage.
+
+---
 
 ## Contexte du challenge
 
