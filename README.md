@@ -1,11 +1,11 @@
 # Data Challenge — AssurPrime
 
-Projet réalisé dans le cadre du cours **M2DS2526challenge1et2**.
+Projet réalisé dans le cadre du cours Statistique en Grande dimension.
 
 ## Contexte du challenge
 
-Ce projet correspond à **Exercice (Data Challenge)** du cours Statistique en Grande dimension.  
-Le challenge choisi sur la plateforme ChallengeData est :
+Ce projet correspond à un exercice **M2DS2526challenge1et2**.  
+Le challenge choisi sur la plateforme ChallengeData est :.
 
 **AssurPrime : Saurez-vous prédire la prime d'assurance ?**
 
@@ -230,5 +230,4 @@ pip install -r requirements.txt
 # Auteur
 
 **Coletta Moutsiha**  
-Master 2 Data Science  
-Université d'Angers
+Master 2 Data Science - Université d'Angers
