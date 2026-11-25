@@ -1,13 +1,16 @@
 # Data Challenge — AssurPrime
 
-Projet réalisé dans le cadre du cours Statistique en Grande dimension et apprentissage.
+Prédiction de la prime pure incendie à partir de données d’assurance agricole. Le modèle final combine XGBoost et un GLM Tweedie.
+
+**Résultat : 51e sur 358 au classement public et 2e au classement académique.**
+
+[Rapport du projet](report.pdf) · [Notebook final](final_model.ipynb) · [Soumission](submission_xgb_glm.csv)
 
 ---
 
 ## Contexte du challenge
 
-Ce projet correspond à un exercice **M2DS2526challenge1et2**.  
-Le challenge choisi sur la plateforme ChallengeData est :.
+Projet du cours Statistique en grande dimension et apprentissage du Master 2 Data Science.
 
 **AssurPrime : Saurez-vous prédire la prime d'assurance ?**
 
@@ -54,7 +57,7 @@ Cette approche est classique en assurance, où l'on modélise séparément **fr�
 
 ---
 
-# Données
+## Données
 
 Les données comprennent plusieurs types de variables :
 
@@ -104,7 +107,7 @@ Variables anonymisées :
 
 ---
 
-# Benchmark fourni
+## Benchmark fourni
 
 Le challenge propose un benchmark basé sur des **GLM (Generalized Linear Models)**.
 
@@ -124,7 +127,7 @@ L'objectif est d'évaluer si des modèles plus avancés permettent d'améliorer 
 
 ---
 
-# Métrique d'évaluation
+## Métrique d'évaluation
 
 La métrique utilisée est la **RMSE (Root Mean Square Error)** :
 ```text
@@ -139,7 +142,7 @@ où :
 
 ---
 
-# Résultat obtenu
+## Résultat obtenu
 
 Résultat obtenu sur la plateforme :
 
@@ -154,35 +157,35 @@ Informations sur la meilleure soumission :
 
 ---
 
-# Soumissions réalisées
+## Soumissions réalisées
 
 Quatre soumissions ont été effectuées.
 
 ### Soumission 1
 
-**XGBoost Tweedie + GLM (Poisson / Tweedie)**  
+**XGBoost Tweedie + GLM (Poisson / Tweedie)**
 Score : **5600.8415**
 
 → **Meilleure soumission**
 
 ### Soumission 2
 
-**XGBoost Tweedie (Pure Premium)**  
+**XGBoost Tweedie (Pure Premium)**
 Score : **5601.5492**
 
 ### Soumission 3
 
-**XGBoost Tweedie + XGBoost Poisson (Fréquence)**  
+**XGBoost Tweedie + XGBoost Poisson (Fréquence)**
 Score : **5601.5492**
 
 ### Soumission 4
 
-**Random Forest (fréquence) + Gradient Boosting (coût moyen)**  
+**Random Forest (fréquence) + Gradient Boosting (coût moyen)**
 Score : **5604.5500**
 
 ---
 
-# Modèle final retenu
+## Modèle final retenu
 
 Le modèle final est un **blend** entre :
 
@@ -210,7 +213,7 @@ Prediction_finale = 0.9 × XGBoost + 0.1 × GLM
 
 ---
 
-# Contenu du dépôt
+## Contenu du dépôt
 
 Le dépôt contient :
 
@@ -220,16 +223,28 @@ Le dépôt contient :
 
 ---
 
-# Installation
+## Installation
 
-Installer les dépendances :
+Depuis la racine du dépôt, avec Python 3.11 ou 3.12 :
+
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+mkdir -p data
 ```
+
+Télécharge les fichiers d’entrée depuis [la page du challenge](https://challengedata.ens.fr/participants/challenges/161/) et place-les dans `data/` :
+
+- `xtrain_input_Z61KlZo.csv`
+- `ytrain_output_DzPxaPY.csv`
+- `test_input_5qJzHrr.csv`
+
+Lance ensuite `jupyter notebook final_model.ipynb` et exécute les cellules dans l’ordre. Le notebook écrit la soumission finale dans `outputs/submission_xgb_glm.csv`.
 
 ---
 
-# Auteur
+## Auteur
 
-**Coletta Moutsiha**  
+**Coletta Moutsiha**
 Master 2 Data Science - Université d'Angers
