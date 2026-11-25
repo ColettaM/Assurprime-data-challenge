@@ -244,6 +244,17 @@ Lance ensuite `jupyter notebook notebooks/final_model.ipynb` et exécute les cel
 
 ---
 
+## Test du notebook
+
+Depuis la racine, après l’installation des dépendances, lance :
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Le test exécute le notebook avec des données fictives dans un dossier temporaire.
+Il vérifie le format du CSV généré et la préservation de la soumission officielle.
+
 ## Auteur
 
 **Coletta Moutsiha**
