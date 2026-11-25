@@ -4,7 +4,7 @@ Prédiction de la prime pure incendie à partir de données d’assurance agrico
 
 **Résultat : 51e sur 358 au classement public et 2e au classement académique.**
 
-[Rapport du projet](report.pdf) · [Notebook final](final_model.ipynb) · [Soumission](submission_xgb_glm.csv)
+[Rapport du projet](docs/report.pdf) · [Notebook final](notebooks/final_model.ipynb) · [Soumission](submissions/submission_xgb_glm.csv)
 
 ---
 
@@ -215,13 +215,13 @@ Prediction_finale = 0.9 × XGBoost + 0.1 × GLM
 
 ## Contenu du dépôt
 
-Le dépôt contient :
-
-- le **rapport PDF du projet**
-- le **notebook correspondant à la soumission finale**
-- le **fichier soumission déposé sur le site**
-
----
+| Emplacement | Contenu |
+| --- | --- |
+| [`notebooks/`](notebooks/) | Notebook du modèle final |
+| [`docs/`](docs/) | Rapport du projet |
+| [`submissions/`](submissions/) | Soumission officielle déposée sur ChallengeData |
+| `data/` | Fichiers d’entrée à télécharger localement |
+| `outputs/` | Soumissions générées lors de l’exécution locale |
 
 ## Installation
 
@@ -240,7 +240,7 @@ Télécharge les fichiers d’entrée depuis [la page du challenge](https://chal
 - `ytrain_output_DzPxaPY.csv`
 - `test_input_5qJzHrr.csv`
 
-Lance ensuite `jupyter notebook final_model.ipynb` et exécute les cellules dans l’ordre. Le notebook écrit la soumission finale dans `outputs/submission_xgb_glm.csv`.
+Lance ensuite `jupyter notebook notebooks/final_model.ipynb` et exécute les cellules dans l’ordre. Le notebook écrit la soumission finale dans `outputs/submission_xgb_glm.csv`.
 
 ---
 
