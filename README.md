@@ -258,4 +258,5 @@ Il vérifie le format du CSV généré et la préservation de la soumission offi
 ## Auteur
 
 **Coletta Moutsiha**
-Master 2 Data Science - Université d'Angers
+Master 2 Data Science
+Université d'Angers
